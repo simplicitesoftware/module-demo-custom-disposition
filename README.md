@@ -11,11 +11,12 @@
 `DemoCustomDisp` module definition
 ==================================
 
-
+This module is a demo of the implementation of a **custom
+disposition** within the generic Simplicité&reg; UI.
 
 `DemoCustomDispPage` external object definition
 -----------------------------------------------
 
-
+Custom disposition page (passing credentials to the client-side resources)
 
 

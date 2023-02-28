@@ -14,7 +14,8 @@
 	}
 }]]></mdl_url>
 		<mdl_type>C</mdl_type>
-		<mdl_comment/>
+		<mdl_comment><![CDATA[This module is a demo of the implementation of a **custom
+disposition** within the generic Simplicité&reg; UI.]]></mdl_comment>
 	</data>
 </object>
 <object>
@@ -80,7 +81,7 @@
 		<obe_name>DemoCustomDispPage</obe_name>
 		<obe_type>E</obe_type>
 		<obe_url/>
-		<obe_comment/>
+		<obe_comment><![CDATA[Custom disposition page (passing credentials to the client-side resources)]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
 		<obe_script_id>src/com/simplicite/extobjects/DemoCustomDisp/DemoCustomDispPage.java</obe_script_id>
