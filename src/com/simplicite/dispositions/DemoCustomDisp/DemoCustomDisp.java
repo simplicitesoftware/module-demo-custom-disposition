@@ -1,6 +1,5 @@
 package com.simplicite.dispositions.DemoCustomDisp;
 
-import com.simplicite.util.AppLog;
 import com.simplicite.util.tools.HTMLTool;
 import com.simplicite.util.tools.Parameters;
 
