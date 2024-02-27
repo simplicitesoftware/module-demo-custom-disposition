@@ -1,5 +1,5 @@
-let DemoCustomDispPage = (() => {
-	function render(params) {
+class DemoCustomDispPage{
+	static render(params) {
 		const app = simplicite.session({
 			endpoint: 'ui',
 			authtoken: params._authtoken, // set in Java
@@ -32,6 +32,4 @@ let DemoCustomDispPage = (() => {
 			});
 		});
 	}
-
-	return { render: render };
-})();
+}
