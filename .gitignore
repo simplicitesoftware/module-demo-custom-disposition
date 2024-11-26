@@ -10,7 +10,6 @@
 /.gradle
 /.m2
 /.scannerwork
-/checkstyle-report.xml
 /**.bak
 /**/Thumbs.db
 /**/.DS_Store
