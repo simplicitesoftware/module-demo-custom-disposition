@@ -15,21 +15,21 @@
 /**/.DS_Store
 
 # -- Eclipse --
-#/.classpath
-#/.settings
-#/.project
-#/.apt_generated*
+/.classpath
+/.settings
+/.project
+/.apt_generated*
 
 # -- IntelliJ --
-#/.idea
-#/*.iml
+/.idea
+/*.iml
 
 # -- VSCode --
-#/.vscode
+/.vscode
 
 # -- Theia --
-#/.theia
-#/.factorypath
+/.theia
+/.factorypath
 
 # -- GitHub --
-#/.github
+/.github
