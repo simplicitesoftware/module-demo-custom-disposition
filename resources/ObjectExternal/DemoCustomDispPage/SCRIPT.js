@@ -1,4 +1,6 @@
-class DemoCustomDispPage{
+/* global simplicite */
+
+class DemoCustomDispPage { // eslint-disable-line no-unused-vars
 	static render(params) {
 		const app = simplicite.session({
 			endpoint: 'ui',
