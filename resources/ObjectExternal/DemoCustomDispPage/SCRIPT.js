@@ -1,7 +1,7 @@
 /* global simplicite */
 
-class DemoCustomDispPage { // eslint-disable-line no-unused-vars
-	static render(params) {
+var DemoCustomDispPage = DemoCustomDispPage || (() => {
+	function render(params) {
 		const app = simplicite.session({
 			endpoint: 'ui',
 			authtoken: params._authtoken, // set in Java
@@ -34,4 +34,6 @@ class DemoCustomDispPage { // eslint-disable-line no-unused-vars
 			});
 		});
 	}
-}
+
+	return { render: render };
+})();
