@@ -14,7 +14,7 @@ public class DemoCustomDispPage extends com.simplicite.util.ExternalObject {
 			setDecoration(false);
 			JQueryWebPage wp = new JQueryWebPage(params.getRoot(), getDisplay());
 			wp.appendJSInclude(HTMLTool.simpliciteClientJS());
-			wp.appendJSInclude(HTMLTool.getResourceJSURL(this, "SCRIPT"));
+			wp.appendJSInclude(HTMLTool.getResourceJSURL(this, "CLASS"));
 			wp.appendCSSInclude(HTMLTool.getResourceCSSURL(this, "STYLES"));
 			wp.append(HTMLTool.getResourceHTMLContent(this, "HTML"));
 			wp.setReady(getName() + ".render(" + params.toJSONObject().put("_authtoken", getGrant().getAuthToken()).put("_ajaxkey", getGrant().getAjaxKey()).toString() + ")");

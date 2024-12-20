@@ -3,6 +3,7 @@
     "eslint": "latest",
     "stylelint": "latest",
     "@eslint/js": "latest",
+    "stylelint-config-standard-less": "latest",
     "jshint": "latest",
     "globals": "latest",
     "stylelint-config-standard": "latest",
@@ -14,5 +15,5 @@
     "stylelint": "stylelint --config=.stylelint-configuration --no-color --allow-empty-input resources/**/*.css resources/**/*.less",
     "jshint": "jshint --config=.jshint-configuration --reporter=jslint resources"
   },
-  "version": "5"
+  "version": "6"
 }
