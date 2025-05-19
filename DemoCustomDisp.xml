@@ -13,7 +13,7 @@
         "stylelint": true,
         "jshint": true,
         "checkstyle": true,
-        "repositoryUrl": "https://platform.simplicite.io/5.3/maven"
+        "repositoryUrl": "https://platform.simplicite.io/6.2/maven"
     },
     "origin": {"uri": "https://github.com/simplicitesoftware/module-demo-custom-disposition.git"},
     "type": "git",
