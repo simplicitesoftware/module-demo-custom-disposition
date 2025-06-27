@@ -62,8 +62,8 @@ To import this module:
 	<data>
 		<dis_code>DemoCustomDisp</dis_code>
 		<dis_image/>
-		<dis_class/>
-		<dis_script_id>src/com/simplicite/dispositions/DemoCustomDisp/DemoCustomDisp.java</dis_script_id>
+		<dis_class>com.simplicite.webapp.web.ExternalObjectDisposition</dis_class>
+		<dis_script_id/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
 </object>
@@ -119,13 +119,13 @@ To import this module:
 	<name>ObjectExternal</name>
 	<action>upsert</action>
 	<data>
-		<obe_name>DemoCustomDispPage</obe_name>
+		<obe_name>DemoCustomDisp</obe_name>
 		<obe_type>E</obe_type>
 		<obe_url/>
 		<obe_comment><![CDATA[Custom disposition page (passing credentials to the client-side resources)]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
-		<obe_script_id>src/com/simplicite/extobjects/DemoCustomDisp/DemoCustomDispPage.java</obe_script_id>
+		<obe_script_id>src/com/simplicite/extobjects/DemoCustomDisp/DemoCustomDisp.java</obe_script_id>
 		<obe_icon>fas/globe</obe_icon>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
@@ -136,7 +136,7 @@ To import this module:
 	<data>
 		<fct_name>DEMO_CUSTOM_DISP_PAGE_E</fct_name>
 		<fct_object_id.obj_type>E</fct_object_id.obj_type>
-		<fct_object_id.obj_name>DemoCustomDispPage</fct_object_id.obj_name>
+		<fct_object_id.obj_name>DemoCustomDisp</fct_object_id.obj_name>
 		<fct_function>L</fct_function>
 		<fct_action_id.act_name/>
 		<fct_view_id.viw_name/>
@@ -150,7 +150,7 @@ To import this module:
 		<grt_group_id.grp_name>DEMO_CUSTOM_DISP</grt_group_id.grp_name>
 		<grt_function_id.fct_name>DEMO_CUSTOM_DISP_PAGE_E</grt_function_id.fct_name>
 		<grt_function_id.fct_object_id.obj_type>E</grt_function_id.fct_object_id.obj_type>
-		<grt_function_id.fct_object_id.obj_name>DemoCustomDispPage</grt_function_id.fct_object_id.obj_name>
+		<grt_function_id.fct_object_id.obj_name>DemoCustomDisp</grt_function_id.fct_object_id.obj_name>
 		<grt_function_id.fct_action_id.act_name/>
 		<grt_function_id.fct_function>L</grt_function_id.fct_function>
 		<grt_activ>1</grt_activ>
@@ -175,7 +175,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCustomDispPage</obe_name>
+					<obe_name>DemoCustomDisp</obe_name>
 				</data>
 			</object>
 		</res_object>
@@ -183,7 +183,7 @@ To import this module:
 		<res_lang>ANY</res_lang>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/DemoCustomDispPage/STYLES.less</res_file>
+		<res_file>resources/ObjectExternal/DemoCustomDisp/STYLES.less</res_file>
 		<res_image/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
@@ -192,7 +192,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCustomDispPage</obe_name>
+					<obe_name>DemoCustomDisp</obe_name>
 				</data>
 			</object>
 		</res_object>
@@ -200,7 +200,7 @@ To import this module:
 		<res_lang>ANY</res_lang>
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/DemoCustomDispPage/HTML.html</res_file>
+		<res_file>resources/ObjectExternal/DemoCustomDisp/HTML.html</res_file>
 		<res_image/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
@@ -209,7 +209,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCustomDispPage</obe_name>
+					<obe_name>DemoCustomDisp</obe_name>
 				</data>
 			</object>
 		</res_object>
@@ -217,7 +217,7 @@ To import this module:
 		<res_lang>ANY</res_lang>
 		<res_code>SCRIPT</res_code>
 		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/DemoCustomDispPage/SCRIPT.js</res_file>
+		<res_file>resources/ObjectExternal/DemoCustomDisp/SCRIPT.js</res_file>
 		<res_image/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
@@ -227,7 +227,7 @@ To import this module:
 	<action>upsert</action>
 	<data>
 		<tsl_typeObject>O</tsl_typeObject>
-		<tsl_id.obe_name>DemoCustomDispPage</tsl_id.obe_name>
+		<tsl_id.obe_name>DemoCustomDisp</tsl_id.obe_name>
 		<tsl_lang>ENU</tsl_lang>
 		<tsl_value>Custom disposition ext</tsl_value>
 		<tsl_help/>
@@ -235,7 +235,7 @@ To import this module:
 	</data>
 	<data>
 		<tsl_typeObject>O</tsl_typeObject>
-		<tsl_id.obe_name>DemoCustomDispPage</tsl_id.obe_name>
+		<tsl_id.obe_name>DemoCustomDisp</tsl_id.obe_name>
 		<tsl_lang>FRA</tsl_lang>
 		<tsl_value>Custom disposition ext</tsl_value>
 		<tsl_help/>

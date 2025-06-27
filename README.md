@@ -38,8 +38,8 @@ To import this module:
 
 - Click on the _Import module_ button
 
-`DemoCustomDispPage` external object definition
------------------------------------------------
+`DemoCustomDisp` external object definition
+-------------------------------------------
 
 Custom disposition page (passing credentials to the client-side resources)
 

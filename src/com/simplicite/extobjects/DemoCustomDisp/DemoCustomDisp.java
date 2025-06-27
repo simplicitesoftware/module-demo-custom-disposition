@@ -5,7 +5,7 @@ import com.simplicite.util.tools.HTMLTool;
 import com.simplicite.util.tools.Parameters;
 import com.simplicite.webapp.web.JQueryWebPage;
 
-public class DemoCustomDispPage extends com.simplicite.util.ExternalObject {
+public class DemoCustomDisp extends com.simplicite.util.ExternalObject {
 	private static final long serialVersionUID = 1L;
 
 	@Override

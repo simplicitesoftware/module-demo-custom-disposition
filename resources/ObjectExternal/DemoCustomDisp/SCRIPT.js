@@ -1,6 +1,6 @@
 /* global simplicite */
 
-var DemoCustomDispPage = DemoCustomDispPage || (() => {
+var DemoCustomDisp = DemoCustomDisp || (() => {
 	function render(params) {
 		const app = simplicite.session({
 			endpoint: 'ui',
@@ -22,7 +22,7 @@ var DemoCustomDispPage = DemoCustomDispPage || (() => {
 						.append($('<p/>').html(item.demoPrdDescription))
 					);
 				}
-				$('#democustomdisppage')
+				$('#democustomdisp')
 					.html($('<h1/>').text('Product catalog'))
 					.append($('<p/>')
 						.append($('<span/>').text(`Hello ${user.firstname} ${user.lastname} (${user.login}) | `))
