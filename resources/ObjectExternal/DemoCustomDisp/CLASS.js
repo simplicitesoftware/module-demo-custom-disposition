@@ -1,6 +1,6 @@
 /* global simplicite */
 
-class DemoCustomDispPage { // eslint-disable-line no-unused-vars
+class DemoCustomDisp { // eslint-disable-line no-unused-vars
 	/** @override */
 	static render(params) {
 		const app = simplicite.session({
@@ -23,7 +23,7 @@ class DemoCustomDispPage { // eslint-disable-line no-unused-vars
 						.append($('<p/>').html(item.demoPrdDescription))
 					);
 				}
-				$('#democustomdisppage')
+				$('#democustomdisp')
 					.html($('<h1/>').text('Product catalog'))
 					.append($('<p/>')
 						.append($('<span/>').text(`Hello ${user.firstname} ${user.lastname} (${user.login}) | `))

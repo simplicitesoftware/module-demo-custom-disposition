@@ -63,8 +63,8 @@ To import this module:
 	<data>
 		<dis_code>DemoCustomDisp</dis_code>
 		<dis_image/>
-		<dis_class/>
-		<dis_script_id>src/com/simplicite/dispositions/DemoCustomDisp/DemoCustomDisp.java</dis_script_id>
+		<dis_class>com.simplicite.webapp.web.ExternalObjectDisposition</dis_class>
+		<dis_script_id/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
 </object>
@@ -121,7 +121,7 @@ To import this module:
 	<name>ObjectExternal</name>
 	<action>upsert</action>
 	<data>
-		<obe_name>DemoCustomDispPage</obe_name>
+		<obe_name>DemoCustomDisp</obe_name>
 		<obe_type>E</obe_type>
 		<obe_nature>com_simplicite_util_ExternalObject</obe_nature>
 		<obe_url/>
@@ -129,7 +129,7 @@ To import this module:
 		<obe_comment><![CDATA[Custom disposition page (passing credentials to the client-side resources)]]></obe_comment>
 		<obe_help/>
 		<obe_class/>
-		<obe_script_id>src/com/simplicite/extobjects/DemoCustomDisp/DemoCustomDispPage.java</obe_script_id>
+		<obe_script_id>src/com/simplicite/extobjects/DemoCustomDisp/DemoCustomDisp.java</obe_script_id>
 		<obe_icon>fas/globe</obe_icon>
 		<obe_permalink/>
 		<obe_widget/>
@@ -153,7 +153,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCustomDispPage</obe_name>
+					<obe_name>DemoCustomDisp</obe_name>
 				</data>
 			</object>
 		</res_object>
@@ -161,7 +161,7 @@ To import this module:
 		<res_lang>ANY</res_lang>
 		<res_code>STYLES</res_code>
 		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/DemoCustomDispPage/STYLES.less</res_file>
+		<res_file>resources/ObjectExternal/DemoCustomDisp/STYLES.less</res_file>
 		<res_image/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
@@ -170,7 +170,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCustomDispPage</obe_name>
+					<obe_name>DemoCustomDisp</obe_name>
 				</data>
 			</object>
 		</res_object>
@@ -178,7 +178,7 @@ To import this module:
 		<res_lang>ANY</res_lang>
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/DemoCustomDispPage/HTML.html</res_file>
+		<res_file>resources/ObjectExternal/DemoCustomDisp/HTML.html</res_file>
 		<res_image/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
@@ -187,7 +187,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCustomDispPage</obe_name>
+					<obe_name>DemoCustomDisp</obe_name>
 				</data>
 			</object>
 		</res_object>
@@ -195,7 +195,7 @@ To import this module:
 		<res_lang>ANY</res_lang>
 		<res_code>CLASS</res_code>
 		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/DemoCustomDispPage/CLASS.js</res_file>
+		<res_file>resources/ObjectExternal/DemoCustomDisp/CLASS.js</res_file>
 		<res_image/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
@@ -208,7 +208,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCustomDispPage</obe_name>
+					<obe_name>DemoCustomDisp</obe_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -223,7 +223,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCustomDispPage</obe_name>
+					<obe_name>DemoCustomDisp</obe_name>
 				</data>
 			</object>
 		</tsl_object>
@@ -277,7 +277,7 @@ To import this module:
 			<object>
 				<name>ObjectExternal</name>
 				<data>
-					<obe_name>DemoCustomDispPage</obe_name>
+					<obe_name>DemoCustomDisp</obe_name>
 				</data>
 			</object>
 		</prm_object>
