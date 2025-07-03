@@ -123,7 +123,7 @@ To import this module:
 	<data>
 		<obe_name>DemoCustomDisp</obe_name>
 		<obe_type>E</obe_type>
-		<obe_nature>com_simplicite_util_ExternalObject</obe_nature>
+		<obe_nature>com_simplicite_webapp_web_JQueryWebPageExternalObject</obe_nature>
 		<obe_url/>
 		<obe_settings/>
 		<obe_comment><![CDATA[Custom disposition page (passing credentials to the client-side resources)]]></obe_comment>

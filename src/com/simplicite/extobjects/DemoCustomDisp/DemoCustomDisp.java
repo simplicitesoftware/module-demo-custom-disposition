@@ -5,15 +5,13 @@ import com.simplicite.util.tools.HTMLTool;
 import com.simplicite.util.tools.Parameters;
 import com.simplicite.webapp.web.JQueryWebPage;
 
-/** Custom disposition page */
-public class DemoCustomDisp extends com.simplicite.util.ExternalObject {
+public class DemoCustomDisp extends com.simplicite.webapp.web.JQueryWebPageExternalObject {
 	private static final long serialVersionUID = 1L;
 
 	@Override
-	public Object display(Parameters params) {
+	public String displayBody(Parameters params) {
 		try {
-			setDecoration(false);
-			JQueryWebPage wp = new JQueryWebPage(params.getRoot(), getDisplay());
+			JQueryWebPage wp = getPage();
 			wp.appendJSInclude(HTMLTool.simpliciteClientJS());
 			wp.appendJSInclude(HTMLTool.getResourceJSURL(this, "CLASS"));
 			wp.appendCSSInclude(HTMLTool.getResourceCSSURL(this, "STYLES"));
