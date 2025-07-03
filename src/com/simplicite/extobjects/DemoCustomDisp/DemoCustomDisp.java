@@ -15,9 +15,8 @@ public class DemoCustomDisp extends com.simplicite.webapp.web.JQueryWebPageExter
 			wp.appendJSInclude(HTMLTool.simpliciteClientJS());
 			wp.appendJSInclude(HTMLTool.getResourceJSURL(this, "SCRIPT"));
 			wp.appendCSSInclude(HTMLTool.getResourceCSSURL(this, "STYLES"));
-			wp.append(HTMLTool.getResourceHTMLContent(this, "HTML"));
 			wp.setReady(getName() + ".render(" + params.toJSONObject().put("_authtoken", getGrant().getAuthToken()).put("_ajaxkey", getGrant().getAjaxKey()).toString() + ")");
-			return wp.toString();
+			return HTMLTool.getResourceHTMLContent(this, "HTML");
 		} catch (Exception e) {
 			AppLog.error(getClass(), "display", null, e, getGrant());
 			return e.getMessage();
