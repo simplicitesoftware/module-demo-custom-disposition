@@ -1,7 +1,14 @@
 /* global simplicite */
 
+/**
+ * Custom disposition
+ * @class
+ */
 class DemoCustomDisp { // eslint-disable-line no-unused-vars
-	/** @override */
+	/**
+	 * Render
+	 * @param params Parameters
+ 	 */
 	static render(params) {
 		const app = simplicite.session({
 			endpoint: 'ui',
