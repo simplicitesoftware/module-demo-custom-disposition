@@ -11,16 +11,19 @@
 `DemoCustomDisp` module definition
 ==================================
 
-### Introduction
+Introduction
+------------
 
 This module is a demo of the implementation of a **custom
 disposition** within the generic Simplicité&reg; UI.
 
-### Prerequisites
+Prerequisites
+-------------
 
 The `Demo` module **must** be installed and configured before importing this addon module.
 
-### Import
+Import
+------
 
 To import this module:
 

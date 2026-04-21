@@ -19,16 +19,19 @@
     "type": "git"
 }]]></mdl_url>
 		<mdl_type>C</mdl_type>
-		<mdl_comment><![CDATA[### Introduction
+		<mdl_comment><![CDATA[Introduction
+------------
 
 This module is a demo of the implementation of a **custom
 disposition** within the generic Simplicité&reg; UI.
 
-### Prerequisites
+Prerequisites
+-------------
 
 The `Demo` module **must** be installed and configured before importing this addon module.
 
-### Import
+Import
+------
 
 To import this module:
 
