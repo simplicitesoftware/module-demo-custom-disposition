@@ -18,13 +18,6 @@ Javadoc
 mvn javadoc:javadoc
 ```
 
-Sonar analysis
---------------
-
-``` text
-mvn sonar:sonar
-```
-
 Checkstyle (optional)
 ---------------------
 
