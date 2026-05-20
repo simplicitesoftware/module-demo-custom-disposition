@@ -46,7 +46,7 @@ class DemoCustomDisp { // eslint-disable-line no-unused-vars
             .append($('<div class="alert alert-secondary"/>')
                 .append($('<div/>').text(`Hello ${user.firstname} ${user.lastname} (${user.login})`))
                 .append(scopes.append($('<a/>', { href: '/logout' }).text('Logout'))))
-            .append($('<h1/>').text(prd.getPluralLabel()))
+            .append($('<h1 class="display-6"/>').text(prd.getPluralLabel()))
             .append(catalog);
     }
 }
