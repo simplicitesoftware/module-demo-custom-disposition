@@ -22,15 +22,16 @@ class DemoCustomDisp { // eslint-disable-line no-unused-vars
         session.info(`User: ${user.firstname} ${user.lastname} (${user.login})`);
 
         const prd = session.getBusinessObject('DemoProduct');
+        await prd.getMetaData();
         const products = await prd.search({ demoPrdAvailable: true });
         const catalog = $('<div class="row row-cols-5"/>');
         for (const product of products) {
             catalog.append($('<div class="col"/>')
                 .append($('<div class="m-1 shadow card"/>')
                     .append($('<img class="p-4 card-img-top"/>').attr('src', prd.getFieldDocumentURL('demoPrdPicture', product)))
-                    .append($('<h5 class="p-1 card-title"/>').text(product.demoPrdName))
-                    .append($('<h6 class="p-1 card-subtitle"/>').text(product.demoPrdReference))
-                    .append($('<p class="p-2 card-text"/>').html(product.demoPrdDescription))
+                    .append($('<h5 class="p-1 card-title"/>').text(prd.getFieldValue('demoPrdName', product)))
+                    .append($('<h6 class="p-1 card-subtitle"/>').text(prd.getFieldValue('demoPrdReference', product)))
+                    .append($('<p class="p-2 card-text"/>').html(prd.getFieldValue('demoPrdDescription', product)))
             ));
         }
 
@@ -45,7 +46,7 @@ class DemoCustomDisp { // eslint-disable-line no-unused-vars
             .append($('<div class="alert alert-secondary"/>')
                 .append($('<div/>').text(`Hello ${user.firstname} ${user.lastname} (${user.login})`))
                 .append(scopes.append($('<a/>', { href: '/logout' }).text('Logout'))))
-            .append($('<h1/>').text('Product catalog'))
+            .append($('<h1/>').text(prd.getPluralLabel()))
             .append(catalog);
     }
 }

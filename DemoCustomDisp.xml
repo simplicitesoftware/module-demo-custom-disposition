@@ -96,7 +96,7 @@ To import this module:
 		<sco_icon>simplicite</sco_icon>
 		<sco_permalink/>
 		<sco_disp_id.dis_code>DemoCustomDisp</sco_disp_id.dis_code>
-		<sco_workarea/>
+		<sco_workarea>1</sco_workarea>
 		<sco_home_id.viw_name>DemoCustomDispHome</sco_home_id.viw_name>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
