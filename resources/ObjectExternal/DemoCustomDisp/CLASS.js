@@ -28,9 +28,9 @@ class DemoCustomDisp { // eslint-disable-line no-unused-vars
 			catalog.append($('<div class="col"/>')
 				.append($('<div class="m-1 shadow card"/>')
 					.append($('<img class="p-4 card-img-top"/>').attr('src', prd.getFieldDocumentURL('demoPrdPicture', product)))
-					.append($('<h5 class="p-1 card-title"/>').text(product.demoPrdName))
-					.append($('<h6 class="p-1 card-subtitle"/>').text(product.demoPrdReference))
-					.append($('<p class="p-2 card-text"/>').html(product.demoPrdDescription))
+					.append($('<h5 class="p-1 card-title"/>').text(prd.getFieldValue('demoPrdName', product)))
+					.append($('<h6 class="p-1 card-subtitle"/>').text(prd.getFieldValue('demoPrdReference', product)))
+					.append($('<p class="p-2 card-text"/>').html(prd.getFieldValue('demoPrdDescription', product)))
 			));
 		}
 		
