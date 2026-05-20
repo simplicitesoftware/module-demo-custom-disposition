@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="16" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
@@ -160,23 +160,6 @@ To import this module:
 				</data>
 			</object>
 		</res_object>
-		<res_type>CSS</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>STYLES</res_code>
-		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/DemoCustomDisp/STYLES.less</res_file>
-		<res_image/>
-		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
-	</data>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoCustomDisp</obe_name>
-				</data>
-			</object>
-		</res_object>
 		<res_type>HTML</res_type>
 		<res_lang>ANY</res_lang>
 		<res_code>HTML</res_code>
@@ -216,7 +199,7 @@ To import this module:
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Custom disposition ext</tsl_value>
+		<tsl_value>Custom disposition page</tsl_value>
 		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
@@ -231,7 +214,7 @@ To import this module:
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Custom disposition ext</tsl_value>
+		<tsl_value>Page de la disposition spécifique</tsl_value>
 		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
