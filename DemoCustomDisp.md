@@ -8,12 +8,4 @@
 ![Logo](https://platform.simplicite.io/logos/standard/logo250.png)
 * * *
 
-`DemoCustomDisp` module definition
-==================================
-
-`DemoCustomDisp` external object definition
--------------------------------------------
-
-Custom disposition page (passing credentials to the client-side resources)
-
-
+MODULE IS EMPTY

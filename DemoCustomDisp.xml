@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<simplicite elements="17" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
+<simplicite elements="19" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.simplicite.fr/base" xsi:schemaLocation="http://www.simplicite.fr/base https://www.simplicite.io/resources/schemas/base.xsd">
 <object>
 	<name>Module</name>
 	<action>upsert</action>
 	<data>
 		<mdl_name>DemoCustomDisp</mdl_name>
-		<mdl_version>6</mdl_version>
+		<mdl_version>7</mdl_version>
 		<mdl_prefix>demo</mdl_prefix>
 		<mdl_url><![CDATA[{
     "maven": {
@@ -13,11 +13,11 @@
         "stylelint": true,
         "jshint": true,
         "checkstyle": true,
-        "repositoryUrl": "https://platform.simplicite.io/6.3/maven"
+        "repositoryUrl": "https://platform.simplicite.io/7.0/maven"
     },
     "origin": {"uri": "https://github.com/simplicitesoftware/module-demo-custom-disposition.git"},
     "type": "git",
-    "branch": "v6"
+    "branch": "v7"
 }]]></mdl_url>
 		<mdl_type>C</mdl_type>
 		<mdl_comment><![CDATA[Introduction
@@ -80,11 +80,25 @@ To import this module:
 		<viw_ui/>
 		<viw_order>1000</viw_order>
 		<viw_icon>simplicite</viw_icon>
-		<viw_disp_id.dis_code>DemoCustomDisp</viw_disp_id.dis_code>
-		<viw_scope/>
+		<viw_disp_id.dis_code/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 		<viw_theme_id.thm_name/>
-		<viw_lang/>
+	</data>
+</object>
+<object>
+	<name>Scope</name>
+	<action>upsert</action>
+	<data>
+		<sco_name>DemoCustomDisp</sco_name>
+		<sco_order>1</sco_order>
+		<sco_lang/>
+		<sco_group/>
+		<sco_icon>simplicite</sco_icon>
+		<sco_permalink/>
+		<sco_disp_id.dis_code>DemoCustomDisp</sco_disp_id.dis_code>
+		<sco_workarea/>
+		<sco_home_id.viw_name>DemoCustomDispHome</sco_home_id.viw_name>
+		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
 </object>
 <object>
@@ -95,8 +109,10 @@ To import this module:
 		<grp_comment/>
 		<grp_type>G</grp_type>
 		<grp_parent_id.grp_name/>
-		<grp_home_id.viw_name>DemoCustomDispHome</grp_home_id.viw_name>
+		<grp_home_id.viw_name/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
+		<grp_scope_id.sco_name>DemoCustomDisp</grp_scope_id.sco_name>
+		<grp_scope_id.sco_home_id.viw_name>DemoCustomDispHome</grp_scope_id.sco_home_id.viw_name>
 	</data>
 </object>
 <object>
@@ -121,6 +137,15 @@ To import this module:
 	</data>
 </object>
 <object>
+	<name>ScopeGroup</name>
+	<action>upsert</action>
+	<data>
+		<scg_scope_id.sco_name>DemoCustomDisp</scg_scope_id.sco_name>
+		<scg_group_id.grp_name>DEMO_CUSTOM_DISP</scg_group_id.grp_name>
+		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
 	<name>ObjectExternal</name>
 	<action>upsert</action>
 	<data>
@@ -137,37 +162,13 @@ To import this module:
 		<obe_permalink/>
 		<obe_widget/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
-	</data>
-</object>
-<object>
-	<name>ViewGroup</name>
-	<action>upsert</action>
-	<data>
-		<vig_view_id.viw_name>DemoCustomDispHome</vig_view_id.viw_name>
-		<vig_group_id.grp_name>DEMO_CUSTOM_DISP</vig_group_id.grp_name>
-		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
+		<obe_width/>
+		<obe_height/>
 	</data>
 </object>
 <object>
 	<name>Resource</name>
 	<action>upsert</action>
-	<data>
-		<res_object>
-			<object>
-				<name>ObjectExternal</name>
-				<data>
-					<obe_name>DemoCustomDisp</obe_name>
-				</data>
-			</object>
-		</res_object>
-		<res_type>CSS</res_type>
-		<res_lang>ANY</res_lang>
-		<res_code>STYLES</res_code>
-		<res_cached>0</res_cached>
-		<res_file>resources/ObjectExternal/DemoCustomDisp/STYLES.less</res_file>
-		<res_image/>
-		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
-	</data>
 	<data>
 		<res_object>
 			<object>
@@ -216,7 +217,7 @@ To import this module:
 			</object>
 		</tsl_object>
 		<tsl_lang>ENU</tsl_lang>
-		<tsl_value>Custom disposition ext</tsl_value>
+		<tsl_value>Custom disposition page</tsl_value>
 		<tsl_plural_value/>
 		<tsl_help/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
@@ -231,9 +232,43 @@ To import this module:
 			</object>
 		</tsl_object>
 		<tsl_lang>FRA</tsl_lang>
-		<tsl_value>Custom disposition ext</tsl_value>
+		<tsl_value>Page de la disposition spécifique</tsl_value>
 		<tsl_plural_value/>
 		<tsl_help/>
+		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
+	</data>
+</object>
+<object>
+	<name>TranslateScope</name>
+	<action>upsert</action>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Scope</name>
+				<data>
+					<sco_name>DemoCustomDisp</sco_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>ENU</tsl_lang>
+		<tsl_value>Custom disposition</tsl_value>
+		<tsl_help/>
+		<tsl_plural_value/>
+		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
+	</data>
+	<data>
+		<tsl_object>
+			<object>
+				<name>Scope</name>
+				<data>
+					<sco_name>DemoCustomDisp</sco_name>
+				</data>
+			</object>
+		</tsl_object>
+		<tsl_lang>FRA</tsl_lang>
+		<tsl_value>Disposition spécifique</tsl_value>
+		<tsl_help/>
+		<tsl_plural_value/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
 </object>
