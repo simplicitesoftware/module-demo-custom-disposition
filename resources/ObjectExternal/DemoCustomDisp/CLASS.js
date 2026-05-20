@@ -34,12 +34,12 @@ class DemoCustomDisp { // eslint-disable-line no-unused-vars
 			));
 		}
 		
-        const scopes = $('<div/>');
-        for (const app of user.apps) {
-        	const name = app.home; 
-            if (name != user.home)
-                scopes.append($('<a/>', { href: `/ui?scope=${name}` }).text(app.label)).append($('<span/>').text(' | '));
-        }
+		const scopes = $('<div/>');
+		for (const app of user.apps) {
+			const name = app.home; 
+			if (name != user.home)
+				scopes.append($('<a/>', { href: `/ui?scope=${name}` }).text(app.label)).append($('<span/>').text(' | '));
+		}
 
 		$('#democustomdisp')
 			.append($('<div class="alert alert-secondary"/>')
