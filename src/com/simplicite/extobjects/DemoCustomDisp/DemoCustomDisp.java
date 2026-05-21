@@ -5,6 +5,9 @@ import com.simplicite.util.tools.HTMLTool;
 import com.simplicite.util.tools.Parameters;
 import com.simplicite.webapp.web.JQueryWebPage;
 
+/**
+ * Custom disposition page
+ */
 public class DemoCustomDisp extends com.simplicite.webapp.web.JQueryWebPageExternalObject {
 	private static final long serialVersionUID = 1L;
 
