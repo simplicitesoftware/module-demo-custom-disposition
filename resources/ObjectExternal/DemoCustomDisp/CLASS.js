@@ -21,12 +21,10 @@ class DemoCustomDisp { // eslint-disable-line no-unused-vars
         session.info(`User: ${user.firstname} ${user.lastname} (${user.login})`);
         $('#democustomdisp-user').text(`Hello ${user.firstname} ${user.lastname} (${user.login})`);
 
-        const scopes = $('#democustomdisp-scopes');
-        for (const app of user.apps) {
-            const name = app.scope; 
-            if (name != user.scopeName)
-                scopes.append($('<a/>', { href: `/ui?scope=${name}` }).text(app.label)).append($('<span/>').text(' | '));
-        }
+        const scopes = $('#democustomdisp-scopes').empty();
+        for (const app of user.apps)
+            if (app.scope != user.scopeName)
+                scopes.append($('<a class="text-primary"/>').attr('href', `/ui?scope=${app.scope}`).text(app.label)).append($('<span/>').text(' | '));
 
         const prd = session.getBusinessObject('DemoProduct');
         await prd.getMetaData();
@@ -42,6 +40,6 @@ class DemoCustomDisp { // eslint-disable-line no-unused-vars
                     .append($('<p class="p-2 card-text"/>').html(prd.getFieldValue('demoPrdDescription', product)))
             ));
         }
-        $('#democustomdisp-products').append(catalog);
+        $('#democustomdisp-products').html(catalog);
     }
 }
