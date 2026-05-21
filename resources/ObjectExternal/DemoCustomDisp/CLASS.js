@@ -18,11 +18,19 @@ class DemoCustomDisp { // eslint-disable-line no-unused-vars
         session.info(`Lib version: ${simplicite.constants.MODULE_VERSION}`);
 
         const user = await session.getGrant();
-        console.log(user);
         session.info(`User: ${user.firstname} ${user.lastname} (${user.login})`);
+        $('#democustomdisp-user').text(`Hello ${user.firstname} ${user.lastname} (${user.login})`);
+
+        const scopes = $('#democustomdisp-scopes');
+        for (const app of user.apps) {
+        	const name = app.scope; 
+            if (name != user.scopeName)
+                scopes.append($('<a/>', { href: `/ui?scope=${name}` }).text(app.label)).append($('<span/>').text(' | '));
+        }
 
         const prd = session.getBusinessObject('DemoProduct');
         await prd.getMetaData();
+        $('#democustomdisp-products-title').append(prd.getPluralLabel());
         const products = await prd.search({ demoPrdAvailable: true });
         const catalog = $('<div class="row row-cols-5"/>');
         for (const product of products) {
@@ -34,19 +42,6 @@ class DemoCustomDisp { // eslint-disable-line no-unused-vars
                     .append($('<p class="p-2 card-text"/>').html(prd.getFieldValue('demoPrdDescription', product)))
             ));
         }
-
-        const scopes = $('<div/>');
-        for (const app of user.apps) {
-        	const name = app.scope; 
-            if (name != user.scopeName)
-                scopes.append($('<a/>', { href: `/ui?scope=${name}` }).text(app.label)).append($('<span/>').text(' | '));
-        }
-
-        $('#democustomdisp')
-            .append($('<div class="alert alert-secondary"/>')
-                .append($('<div/>').text(`Hello ${user.firstname} ${user.lastname} (${user.login})`))
-                .append(scopes.append($('<a/>', { href: '/logout' }).text('Logout'))))
-            .append($('<h1 class="display-6"/>').text(prd.getPluralLabel()))
-            .append(catalog);
+        $('#democustomdisp-products').append(catalog);
     }
 }
