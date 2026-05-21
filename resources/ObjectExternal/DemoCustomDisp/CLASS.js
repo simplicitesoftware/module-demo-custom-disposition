@@ -23,7 +23,7 @@ class DemoCustomDisp { // eslint-disable-line no-unused-vars
 
         const scopes = $('#democustomdisp-scopes');
         for (const app of user.apps) {
-        	const name = app.scope; 
+            const name = app.scope; 
             if (name != user.scopeName)
                 scopes.append($('<a/>', { href: `/ui?scope=${name}` }).text(app.label)).append($('<span/>').text(' | '));
         }
