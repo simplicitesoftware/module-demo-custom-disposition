@@ -34,8 +34,8 @@ class DemoCustomDisp { // eslint-disable-line no-unused-vars
         const products = await prd.search({ demoPrdAvailable: true });
         const catalog = $('<div class="row row-cols-5"/>');
         for (const product of products) {
-            catalog.append($('<div class="col"/>')
-                .append($('<div class="m-1 shadow card"/>')
+            catalog.append($('<div class=p-2 col"/>')
+                .append($('<div class="shadow card"/>')
                     .append($('<img class="p-4 card-img-top"/>').attr('src', prd.getFieldDocumentURL('demoPrdPicture', product)))
                     .append($('<h5 class="p-1 card-title"/>').text(prd.getFieldValue('demoPrdName', product)))
                     .append($('<h6 class="p-1 card-subtitle"/>').text(prd.getFieldValue('demoPrdReference', product)))
