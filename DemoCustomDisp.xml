@@ -17,7 +17,11 @@
     },
     "origin": {"uri": "https://github.com/simplicitesoftware/module-demo-custom-disposition.git"},
     "type": "git",
-    "branch": "v7"
+    "branch": "v7",
+    "export": {
+        "format": "xml",
+        "exploded": false
+    }
 }]]></mdl_url>
 		<mdl_type>C</mdl_type>
 		<mdl_comment><![CDATA[Introduction
