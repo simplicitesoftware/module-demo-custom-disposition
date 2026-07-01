@@ -38,7 +38,7 @@ class DemoCustomDisp { // eslint-disable-line no-unused-vars
                     .append($('<h5 class="p-1 card-title"/>').text(prd.getFieldValue('demoPrdName', product)))
                     .append($('<h6 class="p-1 card-subtitle"/>').text(prd.getFieldValue('demoPrdReference', product)))
                     .append($('<p class="p-2 card-text"/>').html(prd.getFieldValue('demoPrdDescription', product)))
-            ));
+                ));
         }
         $('#democustomdisp-products').html(catalog);
     }
