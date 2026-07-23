@@ -24,7 +24,7 @@ public class DemoCustomDisp extends com.simplicite.webapp.web.JQueryWebPageExter
                 .put("_authtoken", getGrant().getAuthToken())
                 .put("_ajaxkey", getGrant().getAjaxKey()).toString() + ")");
             return HTMLTool.getResourceHTMLContent(this, "HTML", true);
-        } catch (Exception e) {
+        } catch (Exception e) { // Unexpected error
             AppLog.error(e, getGrant());
             return e.getMessage();
         }
