@@ -1,9 +1,10 @@
 {
-    "date": "2026-07-21 17:56:24",
+    "date": "2026-07-23 13:29:14",
     "name": "DemoCustomDisp",
     "format": "xml",
     "files": ["DemoCustomDisp.xml"],
     "repository": {"origin": {"uri": "https://github.com/simplicitesoftware/module-demo-custom-disposition.git"}},
     "version": "7",
+    "branch": "v7",
     "platform": "7.0.0-alpha"
 }

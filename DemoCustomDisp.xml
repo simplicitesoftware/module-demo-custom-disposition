@@ -188,6 +188,7 @@ To import this module:
 		<res_code>HTML</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoCustomDisp/HTML.html</res_file>
+		<res_file_compiled/>
 		<res_image/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
@@ -205,6 +206,7 @@ To import this module:
 		<res_code>CLASS</res_code>
 		<res_cached>0</res_cached>
 		<res_file>resources/ObjectExternal/DemoCustomDisp/CLASS.js</res_file>
+		<res_file_compiled>resources/ObjectExternal/DemoCustomDisp/CLASS.min.js</res_file_compiled>
 		<res_image/>
 		<row_module_id.mdl_name>DemoCustomDisp</row_module_id.mdl_name>
 	</data>
